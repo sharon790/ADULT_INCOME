@@ -2,4 +2,11 @@
 Removed useless columns 
 Replaced the "?" with "Unknown" for columns like 'Workclass,occupation,Relationship,Native.Country'
 Trim,clean & capitalized each word for columns
-Converted every columns starting letter to capital using "M" language {  #"Capitalized Column Names" =Table.TransformColumnNames( #"Renamed Columns",Text.Proper)  }
+Converted every columns starting letter to capital using "M" language {  #"Capitalized Column Names" =Table.TransformColumnNames( #"Renamed Columns",Text.Proper)  }MAKING DASHBORAD
+1.FOR THE FIRST DASHBOARD I CREATED A HIERARCHY OF INCOME BASED WITH THEIR OCCUPATION AND GENDER AND AVERAGE HOURS
+     TOTAL_INDIVIDUALS = COUNTROWS(ADULT_INCOME)
+     INCOME_BELOW_50K = CALCULATE([TOTAL_INDIVIDUALS],ADULT_INCOME[Income]="<=50K")
+     INCOME_ABOVE_50K = CALCULATE([TOTAL_INDIVIDUALS],ADULT_INCOME[Income]=">50K")
+     AVERAGE_WORKING_HOURS = AVERAGE(ADULT_INCOME[Hours.Per.Week])
+   CREATED PIE _CHART FOR INCOME DISTRIBUTION , HORIZONTAL BAR CHART FOR INCOME BY OCCUPATION , DONUT CHART TO SHOW GENDER DISTRIBUTION AND LAST BAR CHART TO SHOW         AVERAGE HOURS BY SEX  
+2. NEXT FOR THE SECOND DASHBOARD INCOME RELATED TO EDUCATION AND GENDER 
