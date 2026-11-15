@@ -15,4 +15,7 @@ Converted every columns starting letter to capital using "M" language {  #"Capit
        CREATED LINE CHART to show Education-Income to Average age, MAP to show relation of Native Country and Income,STACKED COLUMN to show Martial status and                 income,STACKED BAR CHARTS to show of Income and Education.
        
           REPORT
-          
+
+      This project analyses the Adult Income dataset through a two-page Power BI dashboard. It explores income distribution across occupations and gender, along with         the relationship between income, education, marital status, age and working hours. It also examines geographical income distribution across native countries.
+
+      The dashboard provides an interactive view of the demographic and socio-economic patterns associated with earning above or below $50K. 
